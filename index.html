@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monobank</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+    />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,400;0,600;1,500&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="card">
+        <div class="left-part__card">
+          <div class="title">
+            <img
+              src="https://send.monobank.ua/img/logo_short.png"
+              alt="Monobank"
+            />
+          </div>
+          <div class="banka-img">
+            <div class="banka__bg">
+              <img
+                id="banka__bg"
+                src="https://send.monobank.ua/img/jar_bg.png"
+                alt="background"
+              />
+            </div>
+            <div class="banka-img">
+              <img
+                id="banka__img
+          "
+                src="https://send.monobank.ua/img/jar/uah_33.png"
+                alt="banka-img"
+              />
+            </div>
+            <div class="scale_of_goal">
+              <img
+                src="https://send.monobank.ua/img/jar/grid.png"
+                alt="scale"
+              />
+              <div class="scale__goal">10&nbsp000</div>
+              <div class="scale__middle">5&nbsp000</div>
+              <div class="scale__bottom">0</div>
+            </div>
+          </div>
+          <div class="info-block">
+            <div class="block-p">
+              <span>Арам О. created the jar</span>
+            </div>
+            <div class="banka-title"><p>на разное</p></div>
+          </div>
+          <div class="count-block__flex">
+            <div class="count-block">
+              <div class="acc-part">
+                <img
+                  class="count-block__img"
+                  src="https://send.monobank.ua/img/collected.svg"
+                  alt="acc-part__img"
+                />
+                <div class="acc-part__title">
+                  <span>Accumulated</span>
+                  <p id="acc-p">0 ₴</p>
+                </div>
+              </div>
+              <div class="vertical-line"></div>
+              <div class="goal-part">
+                <img
+                  class="count-block__img"
+                  src="https://send.monobank.ua/img/target.svg"
+                  alt="goal-part__img"
+                />
+                <div class="goal-part__title">
+                  <span>Goal</span>
+                  <p id="goal-p">10 000 ₴</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-part__card">
+          <div class="right__card">
+            <div class="right__card-header">
+              <p class="right__card-header-p">Top up amount</p>
+              <img
+                class="right__card-header-img"
+                src="https://send.monobank.ua/img/money.png"
+                alt="cash_img"
+              />
+            </div>
+            <div class="right__card-amount-input">
+              <div class="right__card-amount-input-flex">
+                <input
+                  type="text"
+                  id="first_name"
+                  class="input__amount"
+                  placeholder="0"
+                  required
+                />
+                <div class="right__card-amount-hryvna">&nbsp;₴</div>
+              </div>
+            </div>
+            <div class="amount-sub">
+              2% processing fee for non-Ukrainian cards
+            </div>
+            <div class="button__container">
+              <div class="button">
+                <p class="button__p-top">+100&nbsp;₴</p>
+                <p class="button__p-bot">+2.38&nbsp;€</p>
+              </div>
+              <div class="button">
+                <p class="button__p-top">+500&nbsp;₴</p>
+                <p class="button__p-bot">+11.92&nbsp;€</p>
+              </div>
+              <div class="button">
+                <p class="button__p-top">+1&nbsp;000&nbsp;₴</p>
+                <p class="button__p-bot">+23.84&nbsp;€</p>
+              </div>
+            </div>
+          </div>
+          <div class="inputs__info">
+            <div class="input__name-box">
+              <input
+                type="text"
+                class="input__name"
+                placeholder="Your name (optional)"
+              />
+            </div>
+            <div class="input__comment-box">
+              <input
+                type="text"
+                class="input__comment"
+                placeholder="Comment (optional)"
+              />
+            </div>
+          </div>
+          <div class="buttons__pay">
+            <div class="button__monopay">
+              <button type="button" id="btn__mono" class="btn__mono-img">
+                <img
+                  src="https://send.monobank.ua/img/mono_pay.svg"
+                  alt="mono"
+                  class="btn__mono-img"
+                />
+              </button>
+            </div>
+            <div class="button__googlepay">
+              <button type="button" id="btn__google">
+                <img
+                  src="img/googlePay.png"
+                  alt="google"
+                  class="btn__google-img"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="horizontal__line"></div>
+          <div class="card-details">
+            <img
+              src="https://send.monobank.ua/img/card.svg"
+              alt="card"
+              class="img__card"
+            />
+            <div class="card-details-p"><p>Enter card details</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
