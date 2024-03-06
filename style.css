@@ -1,0 +1,398 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* //////////////////////////////////////////////////////////////////////// */
+
+body {
+  background: linear-gradient(242deg, #d99c9d, #8677d9 51%, #6072cc);
+  background: linear-gradient(136.56deg, #8a53b6 0%, #cea2d0 97.42%);
+  font-family: 'Inter', 'LatoWeb', 'Segoe UI', Tahoma, Geneva, Verdana,
+    sans-serif;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-size: 16px;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 840px;
+}
+.card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 990px;
+  min-height: 680px;
+  border-radius: 24px;
+  z-index: 1;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+  display: flex;
+}
+
+/* Left Part.................................................. */
+
+.left-part__card {
+  width: 495px;
+  height: 680px;
+  background-color: #f3f4f6;
+  border-radius: 24px 0 0 24px;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 42px auto 116px auto;
+}
+.banka-img {
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+#banka__bg {
+  width: 215px;
+}
+#banka__img {
+}
+.banka__bg {
+  position: absolute;
+}
+.banka__img {
+  position: absolute;
+}
+.scale_of_goal {
+  position: absolute;
+  top: 26px;
+  left: 185px;
+}
+.scale__goal {
+  position: absolute;
+  font-family: 'Inter';
+  font-weight: 800;
+  font-size: 10px;
+  color: #8e5b5b;
+  left: 16px;
+  bottom: 150px;
+}
+.scale__middle {
+  position: absolute;
+  font-family: 'Inter', 'LatoWeb', 'Segoe UI', Tahoma, Geneva, Verdana,
+    sans-serif;
+  font-weight: 800;
+  font-size: 10px;
+  color: #8e5b5b;
+  left: 7px;
+  bottom: 77px;
+}
+.scale__bottom {
+  position: absolute;
+  font-family: 'Inter', 'LatoWeb', 'Segoe UI', Tahoma, Geneva, Verdana,
+    sans-serif;
+  font-weight: 800;
+  font-size: 10px;
+  color: #8e5b5b;
+  left: 7px;
+  bottom: 0px;
+}
+.block-p span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000;
+  text-align: center;
+}
+
+.info-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.banka-title {
+  font-size: 22px;
+  font-weight: 900;
+  color: #1b1c21;
+}
+.count-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: space-around;
+  background-color: #ffffff;
+  border-radius: 14px;
+  width: 315px;
+  height: 65px;
+}
+.count-block__flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.acc-part {
+  display: flex;
+}
+.acc-part__title {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #808080;
+}
+#goal-p,
+#acc-p {
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.goal-part {
+  display: flex;
+}
+.goal-part__title {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #808080;
+}
+.count-block__img {
+  margin-right: 16px;
+}
+
+/* Right Part.................................................. */
+.right-part__card {
+  width: 495px;
+  height: 680px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right__card {
+  width: 389px;
+  height: 222px;
+  background: linear-gradient(#ffffff 0 0) padding-box,
+    linear-gradient(92.12deg, #57b5f9 0%, #da11ba 100%) border-box;
+  color: #000;
+  border: 3.5px solid transparent;
+  border-radius: 24px;
+  margin-top: 42px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+}
+.right__card-header {
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: 'Inter', 'LatoWeb', 'Segoe UI', Tahoma, Geneva, Verdana,
+    sans-serif;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+.right__card-header-p {
+  margin-right: 8px;
+}
+.right__card-header-img {
+  width: 16px;
+  height: 16px;
+}
+.amount-sub {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #808080;
+}
+.input__amount {
+  font-weight: 700;
+  text-align: right;
+  color: #1b1c21;
+  width: 185px;
+  border: none;
+  font-size: 48px;
+}
+
+.right__card-amount-input-flex {
+  display: flex;
+  flex-direction: row;
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  height: 60px;
+}
+.right__card-amount-hryvna {
+  font-family: 'Inter', 'LatoWeb', 'Segoe UI', Tahoma, Geneva, Verdana,
+    sans-serif;
+  color: #808080;
+  align-items: center;
+  display: flex;
+}
+/* buttons .......................................................................... */
+.button__container {
+  display: flex;
+  margin-top: 15px;
+  padding-left: 20px;
+}
+.button {
+  margin: 0 10px;
+  width: 95px;
+  height: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  text-align: center;
+  color: #1b1c21;
+}
+.button:hover {
+  background-color: #ccc; /* Новый цвет при наведении */
+}
+.button__p-top {
+  font-family: 'Inter', 'LatoWeb', 'Segoe UI', Tahoma, Geneva, Verdana,
+    sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.button__p-bot {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #808080;
+}
+
+/* Inputs.......................................................................... */
+.inputs__info {
+  position: relative;
+  margin-bottom: 16px;
+}
+.input__name {
+  width: 322px;
+  height: 56px;
+  padding: 0 16px;
+  border-radius: 16px;
+  border: #757575 solid 0.8px;
+  margin-bottom: 16px;
+  background: transparent;
+}
+.input__comment {
+  width: 322px;
+  height: 56px;
+  padding: 0 16px;
+  border-radius: 16px;
+  border: #757575 solid 1px;
+  background: transparent;
+}
+input:focus {
+  outline: none;
+}
+
+/* Buttons pay ........................................................................*/
+.btn__google-img {
+  width: 103px;
+  height: 25px;
+}
+#btn__google,
+#btn__mono {
+  background-color: #000;
+  width: 322px;
+  height: 48px;
+  padding-left: 115px;
+  border-radius: 8px;
+  border: none;
+}
+.button__googlepay,
+.button__monopay {
+  background-color: #000;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+/* horizontal, vertical line ............................................................*/
+
+.horizontal__line {
+  width: 65%;
+  height: 1px;
+  background-color: #b1afaf;
+}
+.vertical-line {
+  width: 1px;
+  height: 40px;
+  background-color: #b1afaf;
+  margin: 0;
+}
+
+/* card-details................................................................ */
+.card-details {
+  display: flex;
+}
+.card-details-p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  padding: 8px;
+  cursor: pointer;
+  background: transparent;
+  color: #e85e5b;
+}
